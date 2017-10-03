@@ -1,0 +1,31 @@
+/**
+ * User: H.Gh
+ * Date: 10/3/2017
+ * Time: 11:55 AM
+ */
+
+.accordion {
+    margin-bottom : 10px;
+}
+
+.accordion .header,
+.accordion .body {
+    border : 1px solid #ccc;
+    padding : 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.accordion .header {
+    background : #f1f1f1;
+}
+
+.accordion .body {
+    background : #fff;
+    display : none;
+}
+
+.accordion .body.show {
+    display: block;
+}
