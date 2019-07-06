@@ -8,7 +8,8 @@
 
     var baseOptions = {
         slideDownSpeed: 200,
-        slideUpSpeed: 400
+        slideUpSpeed: 400,
+        clickListener: true
     };
 
     var baseThis;
@@ -17,7 +18,7 @@
         init: function (options) {
             $.extend(baseOptions, options);
             baseThis = this;
-            $(document).on("click", this.selector + " .header", function () {
+            $(this).on("click", ".header", function () {
                 var card = $(this).closest(".card");
                 if (!card.hasClass("open")) {
                     methods.open(card.index());
