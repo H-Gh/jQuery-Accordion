@@ -13,6 +13,6 @@
     }
   ],
   "require": {
-    "components/jquery ": "*"
+    "components/jquery": "*"
   }
 }
